@@ -18,6 +18,8 @@
 
 				<mule.version>3.8.1</mule.version>
 				<mule.tools.version>1.2</mule.tools.version>
+				<uid>keir-temp</uid>
+				<pwd>somegarbagewhichisnotapassword</pwd>
 		</properties>
 
 		<build>
@@ -29,11 +31,11 @@
     <configuration>
         <deploymentType>cloudhub</deploymentType>
         <muleVersion>${mule.version}</muleVersion> 
-        <username>yourUsername</username>
-        <password>yourPassword</password>
+        <username>${uid}</username>
+        <password>${pwd}</password>
      <workerType>Micro</workerType>
         <redeploy>true</redeploy>
-        <environment>Production</environment>
+        <environment>Sandbox</environment>
     </configuration>
     <executions>
         <execution>
